@@ -13,7 +13,7 @@ spring:
             client-id: oauth-client
             client-secret: 123456789
             authorization-grant-type: authorization_code
-            redirect-uri: "http://104.248.62.255:8080/authorized"
+            redirect-uri: "http://104.248.62.255:8081/authorized"
             client-name: oauth-client
             scope: openid,profile,read,write
         provider:
@@ -22,7 +22,7 @@ spring:
       token-uri: http://104.248.62.255:9000/oauth2/token
 
 server:
-  port: 8080
+  port: 8081
 
 logging:
   level:

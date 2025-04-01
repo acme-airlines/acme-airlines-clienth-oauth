@@ -7,7 +7,7 @@ WORKDIR /app
 # Copia el archivo JAR generado al contenedor
 COPY target/oauth-0.0.1-SNAPSHOT.jar oauth-ms.jar
 
-EXPOSE 8080
+EXPOSE 8081
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "oauth-ms.jar"]

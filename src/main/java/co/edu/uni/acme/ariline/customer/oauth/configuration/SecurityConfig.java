@@ -48,10 +48,10 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authz -> authz
                         // Allow OPTIONS for all endpoints
-                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                        .requestMatchers(HttpMethod.OPTIONS, "/api/v1/**").permitAll()
                         // Allow the login and authorized endpoints
-                        .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/auth/authorized").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/v1/public/auth/login").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/public/auth/authorized").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2Login(login -> login.loginPage("/oauth2/authorization/oauth-client"))

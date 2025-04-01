@@ -21,7 +21,7 @@ import java.util.Map;
  * </p>
  */
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/public/auth")
 @RequiredArgsConstructor
 @Log4j2
 public class AuthController {

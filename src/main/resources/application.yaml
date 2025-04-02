@@ -18,7 +18,7 @@ spring:
             scope: openid,profile,read,write
         provider:
           oauth-server:
-            issuer-uri: http://104.248.62.255:9000
+            issuer-uri: http://104.248.62.255/:9000
       token-uri: http://104.248.62.255:9000/oauth2/token
 
 server:

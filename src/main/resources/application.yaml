@@ -23,7 +23,8 @@ spring:
 
 server:
   port: 8081
-
+  servlet:
+    context-path: /oauth
 logging:
   level:
     org:

@@ -13,13 +13,13 @@ spring:
             client-id: oauth-client
             client-secret: 123456789
             authorization-grant-type: authorization_code
-            redirect-uri: "https://api-acmeairlines.duckdns.org/oauth/api/v1/public/authorized"
+            redirect-uri: "https://api-acmeairlines.ddns.net/oauth/api/v1/public/authorized"
             client-name: oauth-client
             scope: openid,profile,read,write
         provider:
           oauth-server:
-            issuer-uri: https://api-acmeairlines.duckdns.org/authorization
-      token-uri: https://api-acmeairlines.duckdns.org/authorization/oauth2/token
+            issuer-uri: https://api-acmeairlines.ddns.net/authorization
+      token-uri: https://api-acmeairlines.ddns.net/authorization/oauth2/token
 
 server:
   port: 8081

@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests -B
 
 # Stage 2: Crear la imagen final con el JAR compilado (Java 17 con Eclipse Temurin)
-FROM eclipse-temurin:17-jdk-slim
+FROM openjdk-17-slim
 
 WORKDIR /app
 
